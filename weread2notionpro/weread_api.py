@@ -28,7 +28,7 @@ class WeReadApi:
     def try_get_cloud_cookie(self, url, id, password):
         if url.endswith("/"):
             url = url[:-1]
-        print("url")
+        print(url)
         
         req_url = f"{url}/get/{id}"
         data = {"password": password}
@@ -47,7 +47,7 @@ class WeReadApi:
 
     def get_cookie(self):
         url = os.getenv("CC_URL")
-      print("url") 
+      print(url) 
         id = os.getenv("CC_ID")
         password = os.getenv("CC_PASSWORD")
         cookie = os.getenv("WEREAD_COOKIE")
