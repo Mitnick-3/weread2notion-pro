@@ -28,6 +28,8 @@ class WeReadApi:
     def try_get_cloud_cookie(self, url, id, password):
         if url.endswith("/"):
             url = url[:-1]
+        print("url")
+        
         req_url = f"{url}/get/{id}"
         data = {"password": password}
         result = None
