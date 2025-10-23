@@ -45,7 +45,7 @@ class WeReadApi:
 
     def get_cookie(self):
         url = os.getenv("CC_URL")
-      print(url) 
+      print("url") 
         id = os.getenv("CC_ID")
         password = os.getenv("CC_PASSWORD")
         cookie = os.getenv("WEREAD_COOKIE")
