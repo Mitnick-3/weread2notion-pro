@@ -45,8 +45,7 @@ class WeReadApi:
 
     def get_cookie(self):
         url = os.getenv("CC_URL")
-        if not url:
-            url = "https://cookiecloud.malinkang.com/"
+       
         id = os.getenv("CC_ID")
         password = os.getenv("CC_PASSWORD")
         cookie = os.getenv("WEREAD_COOKIE")
