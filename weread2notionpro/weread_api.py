@@ -21,6 +21,8 @@ WEREAD_HISTORY_URL = "https://i.weread.qq.com/readdata/summary?synckey=0"
 
 class WeReadApi:
     def __init__(self):
+
+        print(self.get_cookie())
         self.cookie = self.get_cookie()
         self.session = requests.Session()
         self.session.cookies = self.parse_cookie_string()
