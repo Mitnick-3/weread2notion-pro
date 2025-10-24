@@ -8,7 +8,7 @@ setup(
         "pendulum",
         "retrying",
         "notion-client",
-        "github-heatmap",
+        
     ],
     entry_points={
         "console_scripts": [
